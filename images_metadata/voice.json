@@ -1,0 +1,12 @@
+{
+    "attributes" : [ {
+      "trait_type" : "Liberal",
+      "value" : "liberal"
+    }, {
+      "trait_type" : "Equality",
+      "value" : "equality"
+    } ],
+    "description" : "The Democracy World",
+    "image" : "https://gateway.pinata.cloud/ipfs/QmV2W8hFP5Zj4PeNEHeqjBFGwuaopaCgUWTUkNGynrBNyb",
+    "name" : "Democracy"
+}
