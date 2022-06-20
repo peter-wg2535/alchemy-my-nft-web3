@@ -1,17 +1,19 @@
 require('dotenv').config();
 
+//follow the below tutorial
 //https://docs.alchemy.com/alchemy/tutorials/how-to-create-an-nft/how-to-mint-a-nft
 
 const API_URL=process.env.API_URL;
 const PUBLIC_KEY = process.env.PUBLIC_KEY;
 const PRIVATE_KEY = process.env.PRIVATE_KEY;
+const contractAddress=process.env.CONTRACT_ADDRESS;
 
 const {createAlchemyWeb3} =require("@alch/alchemy-web3");
 const web3=createAlchemyWeb3(API_URL);
 
 const contract_json=require("../artifacts/contracts/MyNFT.sol/MyNFT.json");
 //console.log(JSON.stringify(contract_json.abi));
-const contractAddress="0x5E5A24a2EC1Ac435CEB8aa04fC937B48bc04A4E0";
+
 const nftContract=new web3.eth.Contract(contract_json.abi,contractAddress);
 
 async function mintNFT(tokenURI){
@@ -19,9 +21,7 @@ async function mintNFT(tokenURI){
 
 const nonce=await web3.eth.getTransactionCount(PUBLIC_KEY,'latest');
 
-//get latest nonce
-
- //the transaction
+// Mint nftContract.methods.mintNFT
  const tx = {
     'from': PUBLIC_KEY,
     'to': contractAddress,
@@ -38,4 +38,10 @@ const nonce=await web3.eth.getTransactionCount(PUBLIC_KEY,'latest');
 
 }
 
-mintNFT("https://gateway.pinata.cloud/ipfs/QmNPu9h7bxWXiHzFiZ9ZCLm1NUkAGw23udRTruKnJ9eHAb")
+// Call MintNFT  grab metadata url
+https://testnets.opensea.io/assets/rinkeby/0x249e3e48a83d3adbb3f6f477ecf378802637a3e9/1
+//https://rinkeby.etherscan.io/tx/0x94366356cb32d915811307cfdb5cd1c057cf486394bd3fdb9c49a79bab362ba5
+//mintNFT("https://gateway.pinata.cloud/ipfs/QmNPu9h7bxWXiHzFiZ9ZCLm1NUkAGw23udRTruKnJ9eHAb") // voice
+
+//https://testnets.opensea.io/assets/rinkeby/0x249e3e48a83d3adbb3f6f477ecf378802637a3e9/2
+mintNFT("https://gateway.pinata.cloud/ipfs/Qmb1vnhwfVzXMDBaE7UfqemUPcjVRdP7LFVHsVSuRkYpfh")  // NFT Pot

@@ -1,0 +1,12 @@
+{
+    "attributes" : [ {
+      "trait_type" : "LiberalNFT",
+      "value" : "liberalNFT"
+    }, {
+      "trait_type" : "EqualityNFT",
+      "value" : "equalityNFT"
+    } ],
+    "description" : "The Democracy World on NFT",
+    "image" : "https://gateway.pinata.cloud/ipfs/QmZV6cqnEmGuHEw3tBfLbQwg6FwxyjnxeW67RLdyQxr24z",
+    "name" : "DemocracyNFT"
+}
