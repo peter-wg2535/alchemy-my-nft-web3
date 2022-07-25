@@ -39,9 +39,9 @@ const nonce=await web3.eth.getTransactionCount(PUBLIC_KEY,'latest');
 }
 
 // Call MintNFT  grab metadata url
-https://testnets.opensea.io/assets/rinkeby/0x249e3e48a83d3adbb3f6f477ecf378802637a3e9/1
+//https://testnets.opensea.io/assets/rinkeby/0x249e3e48a83d3adbb3f6f477ecf378802637a3e9/1
 //https://rinkeby.etherscan.io/tx/0x94366356cb32d915811307cfdb5cd1c057cf486394bd3fdb9c49a79bab362ba5
 //mintNFT("https://gateway.pinata.cloud/ipfs/QmNPu9h7bxWXiHzFiZ9ZCLm1NUkAGw23udRTruKnJ9eHAb") // voice
 
 //https://testnets.opensea.io/assets/rinkeby/0x249e3e48a83d3adbb3f6f477ecf378802637a3e9/2
-mintNFT("https://gateway.pinata.cloud/ipfs/Qmb1vnhwfVzXMDBaE7UfqemUPcjVRdP7LFVHsVSuRkYpfh")  // NFT Pot
+//mintNFT("https://gateway.pinata.cloud/ipfs/Qmb1vnhwfVzXMDBaE7UfqemUPcjVRdP7LFVHsVSuRkYpfh")  // NFT Pot

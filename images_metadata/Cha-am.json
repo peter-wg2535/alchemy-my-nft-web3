@@ -1,0 +1,12 @@
+{
+    "attributes" : [ {
+      "trait_type" : "Beach",
+      "value" : "beach"
+    }, {
+      "trait_type" : "Thailand",
+      "value" : "thailand"
+    } ],
+    "description" : "Che-am Beach of Thailand",
+    "image" : "https://gateway.pinata.cloud/ipfs/QmV7nkSKJ3PFgokz9DWkDTFjUW78sQaAWQSD8iyVdjUGLZ",
+    "name" : "Che-am-Beach-Thailand"
+}
